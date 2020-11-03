@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+/****************************************/
+/* HubSpot Style Boilerplate            */
+/****************************************/
+
+
+/*****************************************/
+/*               HTML TAGS               */
+/*****************************************/
+
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  background-color: #F5F8FA;
+}
+
+h1, h2 {
+  color: white;
+  font-family: 'Quicksand', sans-serif, Roboto;
+  text-transform: uppercase;
+  font-size: 65px;
+  font-weight: 900;
+  margin: 70px;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+}
+
+/*****************************************/
+/*               PAGE STYLING            */
+/*****************************************/
+
+.all-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  height: auto;
+  width: 100vw;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  flex-direction: column;
+}
+
+.orange-background {
+  min-height: 500px;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+  top: 0;
+}
+
+@keyframes zero-opacity {
+  to {opacity: 0;}
+}
+
+.blue-background {
+/*   opacity: 0; */
+  display: none;
+  min-height: 500px;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(120deg,#6A78D1 0%,#00A4BD 100%);
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  z-index: -2;
+  top: 0;
+}
+
+@keyframes one-opacity {
+  to {opacity: 1;}
+}
+
+.title-container {
+  background: transparent; 
+  height: 100vh; 
+  width: 100vw; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  position: relative;
+}
+
+.video-container {
+  height: auto; 
+  width: 100vw; 
+  display: none;
+  align-items: center; 
+  justify-content: center; 
+  padding: 50px 0px;
+  flex-direction: column; 
+}
+
+.hs-white-circles {
+  width: 200px;
+  margin: 100px 0px 5px 0px;
+}
+
+.hs-orange-circles {
+  width: 200px;
+  margin: 0px auto;
+  padding: 100px 0 5px 0;
+}
+
+/* Element & Color changes */
+
+span.hubspot {
+  color: white;
+  font-size: 75px;
+  cursor: pointer;
+  margin-bottom: 50px;
+  margin: 0px 60px 50px 60px;
+}
+
+.link {
+  color: #ef8354;
+  text-decoration: none;
+}
+
+.hs-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-letter {
+  background: transparent; 
+  height: auto; 
+  width: 100vw;
+  display: none;
+  margin-bottom: 50px;
+}
+
+div.cover-letter p {
+  color: #33475b;
+  font-family: Quicksand, "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1.125rem;
+  margin: 20px 70px;
+  padding: 5px 0;
+  font-weight: 500;
+  line-height: 1.61111em;
+  text-indent: 40px;
+}
+
+/* ICON ANIMATIONS */
+
+@keyframes h1-text {
+  to { color: #33475b; }
+}
+
+@keyframes link-text {
+  to { color: #0091ae; }
+}
+
+@keyframes hubspot-text {
+  to { color: #FF7A59; }
+}
+
+@keyframes link-hubspot-video {
+  to { color: white; }
+}
+
+/*****************************************/
+/*             MEDIA QUERIES             */
+/*****************************************/
+
+@media only screen and (min-width: 1200px) {
+  div.cover-letter p {
+    margin: 20px 150px;
+  }
+}
+
+@media only screen and (min-width: 316px) and (max-width: 600px) {
+  h1, h2 {
+    font-size: 60px;
+    margin: 60px 50px;
+  }
+  
+  div.cover-letter p {
+    font-size: 1.125rem;
+    margin: 20px 60px;
+  }
+}
+
+/* BIG SCREEN MOBILE */
+@media only screen and (min-width: 361px) and (max-width: 415px) {
+  
+  h1, h2 {
+    font-size: 55px;
+    margin: 50px 50px;
+  }
+    
+  span.hubspot.mobile {
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  span.hubspot {
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  
+  div.cover-letter p {
+    font-size: 1.125rem;
+    margin: 20px 40px;
+  }
+}
+
+/* SMALL SCREEN MOBILE */
+@media only screen and (max-width: 360px) {
+  
+  h1, h2 {
+    font-size: 40px;
+    margin: 50px 50px;
+  }
+  
+  span.hubspot.mobile {
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  span.hubspot {
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    font-size: 55px;
+  }
+  
+  div.cover-letter p {
+    font-size: 1.125rem;
+    margin: 20px 40px;
+  }
+}
